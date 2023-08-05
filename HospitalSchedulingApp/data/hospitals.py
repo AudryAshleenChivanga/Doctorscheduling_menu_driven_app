@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+#This is the whole first group code for the Schedulling App.
 hospitals_data = {
     "hospitals": [
         {
