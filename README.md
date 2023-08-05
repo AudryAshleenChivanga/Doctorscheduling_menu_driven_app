@@ -9,6 +9,7 @@ The app features a user-friendly interface that a list hospitals, departments, a
 Once a hospital and department are selected, the app recommends available doctors and appointment times. 
 
 The outcome of the appointment request is communicated through the app, ensuring a seamless and efficient scheduling process.
+Our project is aim to help the patients and make is easy to reach out their doctors
 
 Project code can be foundin the repo below
 
