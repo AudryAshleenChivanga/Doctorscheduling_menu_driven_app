@@ -118,5 +118,4 @@ if __name__ == "__main__":
     else:
         print(f"Appointment Time: {appointment_details}")
 print("\n ")
-print("THANK YOU FOR BOOKING YOUR APPOINTMENT WITH US!;)")
-print ("\n")
+print("THANK YOU FOR BOOKING YOUR APPOINTMENT WITH US") 
