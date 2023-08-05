@@ -43,6 +43,10 @@ hospitals_data = {
             "name": "Mbc Hospital",
             "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
         },
+        {
+            "name": "Rwanda Military Hospital",
+            "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
+        },
     ]
 }
 
