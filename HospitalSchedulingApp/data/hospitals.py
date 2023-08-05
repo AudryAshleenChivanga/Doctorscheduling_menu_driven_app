@@ -4,23 +4,39 @@
 hospitals_data = {
     "hospitals": [
         {
-            "name": "Kibagabaga Hospital",
+            "name": " Kacyiru Hospital",
             "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
         },
         {
-            "name": "University Teaching Hospital of Kigali",
+            "name": " Kibagabaga Hospital",
             "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
         },
         {
-            "name": "Kacyiyu Hospital",
+            "name": " King Faisal Hospital",
             "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
         },
         {
-            "name": "Muhima Health Center",
+            "name": " La Croix du Sud Hospital",
             "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
         },
         {
-            "name": "La Croix du Sud Hospital",
+            "name": " Masaka Hospital",
+            "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
+        },
+        {
+            "name": " Mbc Hospital",
+            "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
+        },
+        {
+            "name": " Muhima Hospital",
+            "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
+        },
+        {
+            "name": " Nyarugenge Hospital",
+            "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
+        },
+        {
+            "name": " Omega Hospital",
             "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
         },
         {
@@ -28,7 +44,11 @@ hospitals_data = {
             "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
         },
         {
-            "name": "Nyarugenge District Hospital",
+            "name": "Rwamagana Hospital",
+            "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
+        },
+        {
+            "name": "Rwanda Military Hospital",
             "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
         },
         {
@@ -36,15 +56,11 @@ hospitals_data = {
             "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
         },
         {
-            "name": "Omega Hospital",
+            "name": "University Teaching Hospital of Kigali (CHUK)",
             "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
         },
         {
-            "name": "Mbc Hospital",
-            "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
-        },
-        {
-            "name": "Rwanda Military Hospital",
+            "name": "WIWO Specialized Hospital",
             "departments": ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]
         },
     ]
