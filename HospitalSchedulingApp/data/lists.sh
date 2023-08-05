@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Names of Available Hospitals
 1.Kibagabaga Hospital
 2. University Teaching Hospital of Kigali
@@ -15,3 +16,6 @@ Specialists
 All Registered specialists
 
 
+=======
+#!/bin/bash
+>>>>>>> 2fac6fb1121286cec10691effa876510a6a360f1
