@@ -112,3 +112,4 @@ if __name__ == "__main__":
         print(appointment_details)
     else:
         print(f"Appointment Time: {appointment_details}")
+        print("Your Appointment Has Been Booked :)")
