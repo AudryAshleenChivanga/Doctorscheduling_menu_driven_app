@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Names of Available Hospitals
 1.Kibagabaga Hospital
 2. University Teaching Hospital of Kigali
@@ -15,7 +15,9 @@ Available Time slots
 Specialists
 All Registered specialists
 
-
-=======
-#!/bin/bash
->>>>>>> 2fac6fb1121286cec10691effa876510a6a360f1
+Departments
+ Outpatient
+2. General
+3. Opthalmology
+4. Physiotherapy
+5. Emergency
