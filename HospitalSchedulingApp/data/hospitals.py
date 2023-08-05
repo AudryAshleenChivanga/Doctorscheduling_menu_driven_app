@@ -67,7 +67,8 @@ hospitals_data = {
 }
 
 def display_hospitals():
-    print("\033[1;34mWelcome to Kigali Hospitals! Your health, Our priority!\033[0m")
+    print("\033[1;34m        Welcome to Kigali Hospitals!\033[0m")
+    print("\033[1;34m*********Your health, Our priority!*********\033[0m")
     print("Select a hospital:")
     for i, hospital in enumerate(hospitals_data["hospitals"], 1):
         print(f"{i}. {hospital['name']}")
