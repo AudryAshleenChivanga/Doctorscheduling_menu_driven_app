@@ -106,12 +106,15 @@ if __name__ == "__main__":
 
     print("\nThank you for scheduling your appointment!" + " " + "Your Appointment Has Been Booked :)")
     print("\n ")
+    print("||***************************||")
     print("Appointment Summary:")
-    print("*************************||***********************||************************||")
+    print("||***************************||")
     print(f"Hospital: {selected_hospital}")
-    print("*************************||***********************||************************||")
+    print("||***************************||")
     print(f"Department: {selected_department}")
+    print("||***************************||**************||")
     if "Specialist" in appointment_details:
         print(appointment_details)
     else:
         print(f"Appointment Time: {appointment_details}")
+print("\n ")        
