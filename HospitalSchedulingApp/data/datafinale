@@ -16,7 +16,8 @@ class SchedulingApp:
             Hospital(" Mbc Hospital", ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]),
             Hospital(" Muhima Hospital", ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]),
             Hospital("Nyarugenge Hospital", ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]),
-        ]
+            Hospital("Ndera Hospital", ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]),
+                ]
 
     def display_hospitals(self):
         print("\033[1;34m        Welcome to Kigali Hospitals!\033[0m")
