@@ -17,7 +17,7 @@ class SchedulingApp:
             Hospital(" Muhima Hospital", ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]),
             Hospital("Nyarugenge Hospital", ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]),
             Hospital("Ndera Hospital", ["Outpatient", "General", "Opthalmology", "Physiotherapy", "Emergency"]),
-                ]
+        ]
 
     def display_hospitals(self):
         print("\033[1;34m        Welcome to Kigali Hospitals!\033[0m")
@@ -25,17 +25,19 @@ class SchedulingApp:
         print("Select a hospital:")
         for i, hospital in enumerate(self.hospitals, 1):
             print(f"{i}. {hospital.name}")
+        print("0. Exit")
 
     def display_departments(self, hospital_index):
         hospital = self.hospitals[hospital_index]
         print(f"Select a department for {hospital.name}:")
         for i, department in enumerate(hospital.departments, 1):
             print(f"{i}. {department}")
+        print("0. Back")
 
     def get_selected_hospital(self):
         try:
             selected_option = int(input("Enter the number corresponding to the hospital: "))
-            if 1 <= selected_option <= len(self.hospitals):
+            if 0 <= selected_option <= len(self.hospitals):
                 return selected_option - 1
             else:
                 print("Invalid option. Please select a valid number.")
@@ -49,7 +51,7 @@ class SchedulingApp:
             hospital = self.hospitals[hospital_index]
             self.display_departments(hospital_index)
             selected_option = int(input("Enter the number corresponding to the department: "))
-            if 1 <= selected_option <= len(hospital.departments):
+            if 0 <= selected_option <= len(hospital.departments):
                 return selected_option - 1
             else:
                 print("Invalid option. Please select a valid number.")
@@ -69,31 +71,37 @@ class SchedulingApp:
             return f"Appointment Time: {appointment_time}"
 
     def run(self):
-        self.display_hospitals()
-        selected_hospital_index = self.get_selected_hospital()
-        selected_hospital = self.hospitals[selected_hospital_index].name
-        selected_department_index = self.get_selected_department(selected_hospital_index)
-        selected_department = self.hospitals[selected_hospital_index].departments[selected_department_index]
+        while True:
+            self.display_hospitals()
+            selected_option = self.get_selected_hospital()
 
-        print(f"\nYou selected: Hospital: {selected_hospital}, Department: {selected_department}")
-        appointment_details = self.schedule_appointment()
+            if selected_option == -1:
+                print("Exiting the app. Thank you!")
+                break
 
-        print("\nThank you for scheduling your appointment! Your Appointment Has Been Booked :)")
-        print("\n ")
-        print("||***************************||")
-        print("Appointment Summary:")
-        print("||***************************||")
-        print(f"Hospital: {selected_hospital}")
-        print("||***************************||")
-        print(f"Department: {selected_department}")
-        print("||***************************||**************||")
-        if "Specialist" in appointment_details:
-            print(appointment_details)
-        else:
-            print(f"Appointment Time: {appointment_details}")
-        print("\n ")
+            if selected_option >= 0 and selected_option < len(self.hospitals):
+                selected_hospital = self.hospitals[selected_option].name
+                selected_department_index = self.get_selected_department(selected_option)
+                selected_department = self.hospitals[selected_option].departments[selected_department_index]
+
+                print(f"\nYou selected: Hospital: {selected_hospital}, Department: {selected_department}")
+                appointment_details = self.schedule_appointment()
+
+                print("\nThank you for scheduling your appointment! Your Appointment Has Been Booked :)")
+                print("\n ")
+                print("||***************************||")
+                print("Appointment Summary:")
+                print("||***************************||")
+                print(f"Hospital: {selected_hospital}")
+                print("||***************************||")
+                print(f"Department: {selected_department}")
+                print("||***************************||**************||")
+                if "Specialist" in appointment_details:
+                    print(appointment_details)
+                else:
+                    print(f"Appointment Time: {appointment_details}")
+                print("\n ")
 
 if __name__ == "__main__":
     app = SchedulingApp()
     app.run()
-
