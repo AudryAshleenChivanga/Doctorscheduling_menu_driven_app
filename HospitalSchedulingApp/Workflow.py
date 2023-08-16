@@ -27,7 +27,7 @@ Department Selection
 Department Selection Input
      |
      v
-   Scheduling
+   Scheduling------------------------>To be Approved by Department of Public Health, Kigali
      |
      v
 Appointment Summary

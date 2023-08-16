@@ -95,7 +95,7 @@ class SchedulingApp:
                 print(f"Hospital: {selected_hospital}")
                 print("||***************************||")
                 print(f"Department: {selected_department}")
-                print("||***************************||**************||")
+                print("Your Appointment ID is :34267")
                 if "Specialist" in appointment_details:
                     print(appointment_details)
                 else:
